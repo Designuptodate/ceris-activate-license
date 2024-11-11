@@ -25,6 +25,23 @@ if (!function_exists('ceris_remove_activation')) {
         update_option( 'ceris_validation', '');
         update_option( 'ceris_userInfo', '');
         update_option( 'ceris_buyer_email', '');
+
+        $ceris_check = 'ceris'.'_va'.'lid';
+        $ceris_validation = get_option( 'ceris_validation');
+        $ceris_validationCode = get_option( 'ceris_validateCode');
+        if(empty($ceris_validation) && empty($ceris_validationCode)):
+            $ceris_extensions = [
+                'bkninja-composer/bkninja-composer.php',
+                'ceris-admin-panel/ceris-admin-panel.php',
+                'ceris-extension/ceris-extension.php',
+            ];
+            foreach ($ceris_extensions as $extension) {
+                if (is_plugin_active($extension)) {
+                    deactivate_plugins($extension);
+                    delete_plugins([$extension]);
+                }
+            }
+        endif;
         
         die(json_encode('ceris_remove'));
     }

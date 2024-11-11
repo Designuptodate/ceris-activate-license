@@ -4,7 +4,7 @@
     Plugin URI: https://themesific.com
     Description: Ceris Activate License
     Author: BKNinja
-    Version: 1.1
+    Version: 1.2
     Author URI: https://themesific.com
     */
 ?>
