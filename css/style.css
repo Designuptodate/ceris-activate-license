@@ -1,0 +1,213 @@
+.toplevel_page_ceris-theme-registration .ceris-notice.notice-warning {
+    margin-top: 40px;
+}
+.ceris-registration-wrap {
+    margin: 50px 15px 2px;
+    min-width: 255px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+.ceris-registration-wrap .bk-admin-notice {
+    font-size: 18px;
+    color: #888;
+}
+.ceris-registration-wrap .bk-screenshot img {
+    max-width: 880px;
+}
+/* Registration **/
+.ceris-registration-heading-text {
+    font-size: 30px;
+}
+.envato-purchase-code-form {
+    margin: 0 0 80px 0;
+}
+.envato-purchase-code-form form{
+    max-width: 780px;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+    padding: 50px;
+}
+.envato-purchase-code-form form .purchase-code-col, .envato-purchase-code-form form .buyer-email-col {
+    display: grid;
+    grid-template-columns: 180px auto;
+    margin-bottom: 10px;
+}
+.envato-purchase-code-form form .activation-button-col {
+    display: flex;
+    justify-content: flex-start;
+}
+.envato-purchase-code-form form .activation-button-col > * {
+    margin-left: 180px;
+}
+.envato-purchase-code-form form input[type=text]{
+    min-height: 50px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    background-color: #fcfcfc;
+}
+.envato-purchase-code-form form input.purchase_code_submit, .envato-purchase-code-form form input.ceris-deactive-license, .ceris-localhost-active{
+    height: 50px;
+    min-width: 110px;
+    line-height: 50px;
+    border: 1px solid #ddd;
+    padding: 0 25px;
+    background-color: #2271B1;
+    color: #fff;
+}
+.envato-purchase-code-form form input.purchase_code_submit:hover, .envato-purchase-code-form form input.ceris-deactive-license:hover, .envato-purchase-code-form:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.envato-purchase-code-form form label{
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+}
+.envato-purchase-code-form form .buyer-email-col label span {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.envato-purchase-code-information-wrap {
+    margin: 0 0 80px 0;
+}
+.envato-purchase-code-information table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.envato-purchase-code-information h3 {
+    margin-bottom: 30px;
+}
+.envato-purchase-code-information table:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.envato-purchase-code-information table:not(.wp-calendar-table) thead th,
+.envato-purchase-code-information table:not(.wp-calendar-table) td:not(.avatar):first-child {
+    padding: 1em;
+}
+
+.envato-purchase-code-information table th, .envato-purchase-code-information table td {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.envato-purchase-code-information tr {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.envato-purchase-code-information th {
+    padding: 1em;
+    text-align: left;
+}
+
+.envato-purchase-code-information td {
+    padding: 1em;
+}
+
+.envato-purchase-code-information dl {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+}
+
+.envato-purchase-code-information dd,
+.envato-purchase-code-information dt {
+    line-height: 1.4;
+}
+
+.envato-purchase-code-information dt {
+    font-weight: 700;
+}
+
+.envato-purchase-code-information dd {
+    margin-left: 0;
+}
+
+.envato-purchase-code-information  table tbody tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, .025);
+}
+
+/*Notification*/
+.registration-notification > p {
+    font-size: 15px;
+}
+.registration-notification {
+    font-size: 16px;
+    max-width: 880px;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: lavenderblush;
+}
+.registration-notification.ceris-registration-successful {
+    background-color: aliceblue;
+    margin-bottom: 60px;
+    margin-top:  -20px;
+}
+.val-ajax-loader {
+  display: block;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  animation: valspin 7s ease-in-out;
+  animation-iteration-count: infinite;
+  transition-duration: 0.1s;
+}
+
+.val-ajax-loader:hover {
+  scale: 0.95;
+  /*Loader on hover effect*/
+}
+
+.val-ajax-loader:active {
+  scale: 1.2;
+  /*Loader on click effect*/
+}
+
+@keyframes valspin {
+  0% {
+    transform: rotate(0deg);
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
+  }
+  50% {
+    transform: rotate(1800deg);
+    border: 3px solid white;
+    border-left: solid 3px transparent;
+    border-right: solid 3px transparent;
+  }
+  100% {
+    /*Reversed spinning*/
+    transform: rotate(0deg);
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
+  }
+}
+
+.loading-status {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #4E8DC1;
+}
+
+/** Show hide**/
+.ceris-hide-btn {
+    display: none;
+}
